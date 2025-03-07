@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background-image: url('../img/bg-app.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+}
+
+.bg-glass {
+  width: 100%; 
+  height: 100%; 
+  background: rgba( 255, 255, 255, 0.3 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 15.5px );
+  -webkit-backdrop-filter: blur( 15.5px );
+  border-radius: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.50);
+}
+
+.btn-custom-secondary {
+  height: 55px;
+  width: 100%;
+  background: rgba( 255, 255, 255, 0.1 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 15.5px );
+  -webkit-backdrop-filter: blur( 15.5px );
+  border-radius: 10px;
+  border: none;
+  color: white;
+}
+
+.btn-button {
+  font-size: 15pt;
+  font-weight: 700;
+  letter-spacing: 6px;
+  line-height: 55px;
+  text-align: center;
+  word-wrap: break-word
+}
+
+.btn-a {
+  font-size: 13pt;
+  text-align: center;
+  line-height: 55px;
+}
+
+.form-floating input,
+.form-floating input:focus,
+.form-floating input:focus label,
+.form-floating textarea,
+.form-floating textarea:focus,
+.form-floating select, 
+.form-floating select:focus{
+  
+  background: none;
+  color: white;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid white;
+}
+
+.form-floating select:focus {
+  box-shadow: none;
+}
+.form-floating select option {
+  color: black;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.form-floating>.form-control-plaintext~label::after, .form-floating>.form-control:focus~label::after, .form-floating>.form-control:not(:placeholder-shown)~label::after, .form-floating>.form-select~label::after  {
+  background: none;
+  color: white;
+}
+
+.form-floating textarea {
+  height: 100px;
+}
+
+
+
+
+
+.form-floating label {
+  color: white;
+}
+
+
+/* App UI */
+.bg-glass-sidebar {
+  background: rgba( 255, 255, 255, 0.3 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 15.5px );
+  -webkit-backdrop-filter: blur( 15.5px );
+}
+
+#navbar .name {
+  /* color: #5a1f06; */
+  color: #ffffff;
+  
+}
+
+#navbar {
+  background: rgba(108, 108, 108, 0.2);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 10px );
+  -webkit-backdrop-filter: blur( 10px );
+  position: fixed;
+  z-index: 999;
+  width: calc(100vw - 22%);
+  right: 0;
+  top: 0;
+  padding: 0 50px;
+}
+
+aside {
+  /* width: 400px; */
+  width: 22%;
+  height: 100vh;
+  padding: 40px;
+}
+aside ul {
+  padding:0;
+}
+
+aside ul li {
+  list-style: none;
+}
+aside ul li a.active {
+  background: rgba( 255, 255, 255, 0.2 );
+  border-radius: 10px;
+  width: 100%;
+ 
+}
+aside ul li a {
+  padding: 12px 10px;
+  width: 100%;
+}
+
+aside ul li:hover {
+  background: rgba( 255, 255, 255, 0.2 );
+  border-radius: 10px;
+  width: 100%;
+}
+
+
+#breadcrumb {
+  padding-top: 80px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+main #content {
+  width: 78%;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+
+/* For WebKit browsers (Chrome, Safari) */
+div.bg-glass::-webkit-scrollbar {
+  width: 5px; 
+  height: 10px;
+  border-radius: 10px;
+}
+
+div.bg-glass::-webkit-scrollbar-thumb {
+  background-color: #ffffff; 
+  height: 10px;
+  border-radius: 10px; 
+}
+
+.responsive-content {
+  padding: 0 50px;
+}
+
+#position-img-menu {
+  top: -90px;
+}
+
+
+
+
+
+/* =============== Responsive =============== */
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .hidden-aside {
+    display: none;
+  }
+  aside {
+    width: 100%;
+    z-index: 999;
+    position: absolute;
+    padding-top: 100px;
+  }
+
+  aside header img{ 
+    display: none;
+  }
+
+  #navbar {
+    width: 100%;
+    left: 0;
+    padding: 0 10px;
+  }
+  #nav-name {
+    display: none;
+  }
+
+  header#breadcrumb {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  main #content {
+    width: 100%;
+  }
+
+  .responsive-content {
+    padding: 0 20px;
+  }
+
+  #position-img-menu {
+    top: -110px;
+  }
+  
+
+
+}
