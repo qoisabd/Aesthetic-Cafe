@@ -1,3 +1,6 @@
+<?php
+  use Illuminate\Support\Facades\Storage;
+?>
 @extends('layouts.app')
 @section('title', 'Dashboard')
 @section('content')
@@ -25,9 +28,9 @@
       @foreach ($data as $item)
         <div class="col-xl-4 col-lg-6 col-12" style="margin-bottom: 150px;">
           <div class="bg-glass text-center text-white py-4 px-3 position-relative">
-            <div class="position-absolute" id="position-img-menu">
-              <img src="{{ asset('storage/menu/' . $item->image) }}" alt="photo" class="mx-auto" width="65%">
-            </div>
+          <div class="position-absolute" id="position-img-menu">
+            <img src="{{ asset('storage/menu/' . $item->image) }}" alt="photo" class="mx-auto" width="65%">
+          </div>
             <div class="text-white" style="margin-top: 90px; margin-bottom: 100px">
               <h4>{{ $item->name }}</h4>
               <p class="fw-light">{{ $item->description }}</p>

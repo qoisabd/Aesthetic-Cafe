@@ -9,6 +9,7 @@
   <script type="text/javascript" src="https://app.midtrans.com/snap/snap.js"
     data-client-key="{{ env('MIDTRANS_CLIENT_KEY') }}"></script>
   <!-- Note: replace with src="https://app.midtrans.com/snap/snap.js" for Production environment -->
+  <!-- Note: replace with src="https://app.sandbox.midtrans.com/snap/snap.js" for sandbox environment -->
 
   @stack('script-head')
 
